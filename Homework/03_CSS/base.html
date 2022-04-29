@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<HTML> 
+        <HEAD> 
+            <META charset="utf-8"> 
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <TITLE>CSS_03</TITLE> 
+            <style>
+                div.lvl1 > div{
+                    width: 150px;
+                    background-color: greenyellow;
+                    border: solid black 1px;
+                    float: left;
+                    position: relative;
+                    cursor: pointer;
+                }
+                div.lvl2{
+                    width: 150px;
+                    display: none;
+                }
+                div.lvl2 > div{
+                    background-color: greenyellow;
+                    border: solid black 1px;
+                    cursor: pointer;
+                }
+                div.lvl1 > div:hover div.lvl2{
+                    display: block;
+                    position: absolute;
+                    left: 0%;
+                    top: 100%;
+                }
+                @media all and (max-width: 1890px){
+                    div.lvl1 > div{
+                        width: 150px;
+                        background-color: greenyellow;
+                        border: solid black 1px;
+                        float: left;
+                        position: relative;
+                        cursor: pointer;
+                    }
+                    div.lvl2 > div{
+                        background-color: greenyellow;
+                        border: solid black 1px;
+                        cursor: pointer;
+                    }
+                    div.lvl1 > div:hover div.lvl2{
+                        display: block;
+                        position: absolute;
+                        left: 100%;
+                        top: 0%;    
+                    }
+                }
+            </style>
+        </HEAD> 
+        <BODY> 
+         <div class="lvl1">
+             <div>Понедельник
+                 <div class="lvl2">
+                     <div>Завтрак</div>
+                     <div>Обед</div>
+                     <div>Ужин</div>
+                 </div>
+             </div>
+             <div>Вторник
+                <div class="lvl2">
+                    <div>Завтрак</div>
+                    <div>Обед</div>
+                    <div>Ужин</div> 
+                </div>
+             </div>
+             <div>Среда
+                <div class="lvl2">
+                    <div>Завтрак</div>
+                    <div>Обед</div>
+                    <div>Ужин</div> 
+                </div>
+             </div> 
+             <div>Четверг
+                <div class="lvl2">
+                    <div>Завтрак</div>
+                    <div>Обед</div>
+                    <div>Ужин</div> 
+                </div>
+             </div> 
+             <div>Пятница
+                <div class="lvl2">
+                    <div>Завтрак</div>
+                    <div>Обед</div>
+                    <div>Ужин</div> 
+                </div>
+             </div> 
+             <div>Суббота
+                <div class="lvl2">
+                    <div>Завтрак</div>
+                    <div>Обед</div>
+                    <div>Ужин</div> 
+                </div>
+             </div>  
+         </div>   
+        </BODY> 
+</HTML> 
